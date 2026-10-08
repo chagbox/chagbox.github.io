@@ -1,0 +1,19 @@
+---
+layout: default
+title: Writeups
+---
+<h1>Writeups</h1>
+<p class="meta">Offensive security walkthroughs and detection notes — HTB, HackMyVM and lab work.</p>
+<hr class="rule">
+{% for post in site.posts %}
+<div class="post-list-item">
+  <div class="date">{{ post.date | date: "%Y-%m-%d" }}{% if post.difficulty %} · {{ post.difficulty }}{% endif %}</div>
+  <div class="title"><a href="{{ post.url | relative_url }}">{{ post.title }}</a></div>
+  {% if post.tags %}
+  <div class="tags">{% for tag in post.tags %}<span>{{ tag }}</span>{% endfor %}</div>
+  {% endif %}
+</div>
+{% endfor %}
+{% if site.posts.size == 0 %}
+<p class="meta">No posts yet — the first one goes in <code>_posts/</code>.</p>
+{% endif %}

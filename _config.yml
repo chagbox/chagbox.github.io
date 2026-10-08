@@ -1,0 +1,10 @@
+title: "geoffrey-lawrence :: writeups"
+description: "Offensive security writeups and detection notes — VAPT, SOC, Active Directory, MITRE ATT&CK."
+author: Geoffrey Lawrence
+github_username: chagbox
+linkedin_url: "https://www.linkedin.com/in/geoffrey-lawrence-cyber/"
+markdown: kramdown
+permalink: /:year/:month/:day/:title/
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
